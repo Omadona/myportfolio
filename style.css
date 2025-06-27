@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: "MyCuteFont";
+  src: url("AdorableLady.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: "MyCuteFont", sans-serif;
+  color: #ff9cd1;
+}
+
+.mainvisual {
+  width: 100%;
+}
+
+.mainvisual img {
+  width: 100%;
+}
+
+.site-title {
+  font-size: 60px;
+  padding: 40px 0 10px;
+  text-align: center;
+}
+
+.sec-title {
+  margin-bottom: 0.3em;
+}
+
+.outline {
+  font-family: "Kaisei Decol", serif;
+  margin-top: 0;
+  color: #888;
+  padding-bottom: 40px;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  text-align: center
+}
+
+/* header */
+
+header {
+  max-width: 900px;
+  margin: 0 auto 100px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+ul li::before {
+  content: "♥";
+  color: #ff9cd1;
+  margin-right: 0.5em;
+}
+
+/* favorite */
+
+#favorite {
+  margin-bottom: 100px;
+}
+
+#favorite .favo-img {
+  display: flex;
+  gap: 20px;
+}
+
+#favorite .favo-img img {
+  width: calc((100% - 40px)/ 3);
+}
+
+#favorite .favo-img:hover {
+  cursor: help;
+}
+
+/* gallery */
+
+#gallery {
+  margin-bottom: 100px;
+}
+
+#gallery .img-box {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+#gallery .img-box img {
+  margin: 0 auto;
+  width: calc((100% - 60px) / 2);
+}
+
+.date {
+  text-align: left;
+  font-size: 12px;
+  color: #888;
+  margin: 0 15px 20px;
+}
+
+/* plofile */
+
+#plofile {
+   margin-bottom: 100px;
+}
+
+#plofile .plofile-info {
+   font-family: "Kaisei Decol", serif;
+   color: #888;
+  display: flex;
+  gap: 50px;
+}
+
+#plofile .plofile-info img {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+#plofile .plofile-info h2 {
+  margin-top: 50px;
+}
+
+#plofile .text-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  gap: 5px; 
+}
+
+
+/* modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgb(255, 156, 209);
+  border-radius: 10px;
+}
+
+@media screen and (max-width:900px) {
+  
+  /* header */
+
+ header {
+  margin: 0 auto 80px;
+}
+
+header ul {
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+/* favorite */
+
+#favorite {
+  margin-bottom: 100px;
+}
+
+#favorite .favo-img {
+ flex-direction: column;
+}
+
+#favorite .favo-img img {
+  width: 100%;
+}
+
+/* plofile */
+
+#plofile .plofile-info {
+flex-direction: column;
+align-items: center;
+}
+
+}
