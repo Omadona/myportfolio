@@ -1,16 +1,89 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>おえかきあぷり</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Noto+Serif+JP:wght@200..900&display=swap"
+    rel="stylesheet">
+  <title>QxQ Room</title>
 </head>
+
 <body>
-  <button id="btn">クリア</button>
-  <button id="eraser">消しゴム</button>
-  <canvas id="canvas"></canvas>
+
+  <div class="modal" id="modal">
+    <img id="modal-img" src="" alt="拡大画像">
+  </div>
+
+  <header>
+    <div class="mainvisual">
+      <img src="mainvisual.PNG" alt="mainvisual">
+    </div>
+    <h1 class="site-title">QxQ_RooM...</h1>
+    <nav>
+      <ul>
+        <li><a href="#favorite">FAVORITE</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#charactor">CHARACTOR</a></li>
+        <li><a href="dark.html">DARK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="favorite" class="wrapper">
+      <h2 class="sec-title">FAVORITE</h2>
+      <p class="outline">お気に入りのオリジナルイラスト</p>
+      <div class="favo-img">
+        <img src="favo1.PNG" alt="favorite1">
+        <img src="favo2.PNG" alt="favorite2">
+        <img src="favo3.jpg" alt="favorite3">
+      </div>
+    </section>
+
+    <section id="gallery" class="wrapper">
+      <h2 class="sec-title">GALLERY</h2>
+      <p class="outline">年別のピックアップ</p>
+
+      <div class="item">
+        <p class="date">-2023-</p>
+        <div class="img-box">
+          <img src="2023moe1.jpg" alt="original1">
+          <img src="2023moe2.jpg" alt="original2">
+        </div>
+        <p class="date">-2024-</p>
+        <div class="img-box">
+          <img src="2024oc1.PNG" alt="original3">
+          <img src="2024oc2.jpg" alt="original4">
+        </div>
+      </div>
+    </section>
+
+    <section id="plofile" class="wrapper">
+      <h2 class="sec-title">PLOFILE</h2>
+      <p class="outline">プロフィール</p>
+      <div class="plofile-info">
+        <img src="plofile.jpg" alt="plofile">
+        <div text-info>
+          <h2>NAME : QxQ</h2>
+          <p>skill : clip studio paint
+            <br>  HTML / CSS
+          </p>
+          <p>like : ゆめかわいいとダークな世界</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="wrapper">
+    <p>&copy;QXQ</p>
+  </footer>
 
   <script src="main.js"></script>
 </body>
+
 </html>
